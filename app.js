@@ -76,7 +76,7 @@ discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
 
 let workspaceID; // workspaceID will be set when the workspace is created or validated.
 const assistantSetup = new WatsonAssistantSetup(assistant);
-const workspaceJson = JSON.parse(fs.readFileSync('data/conversation/workspaces/banking.json'));
+const workspaceJson = JSON.parse(fs.readFileSync('data/conversation/workspaces/skill-Arabic-Banking-Chatbot.json'));
 const assistantSetupParams = { default_name: DEFAULT_NAME, workspace_json: workspaceJson };
 assistantSetup.setupAssistantWorkspace(assistantSetupParams, (err, data) => {
   if (err) {
